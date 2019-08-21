@@ -33,7 +33,7 @@ export default class App extends React.Component {
     let height = Number(this.state.height);
     const b = bmi.bmiCalculate(weight , height);
     const crit = bmi.critCalculator(b , this.state.region);
-    Alert.alert(b.toString() , crit);
+    Alert.alert(crit);
   }
 
 
